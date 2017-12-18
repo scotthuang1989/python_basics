@@ -24,7 +24,7 @@ ValueError: attempted relative import beyond top-level package
 
 ### PEP328:
 
-Relative imports use a module’s __name__ attribute to determine that module’s position in the package hierarchy. If the module’s name does not contain any package information (e.g. it is set to __main__) then relative imports are resolved as if the module were a top level module, regardless of where the module is actually located on the file system.
+Relative imports use a module’s __name__ attribute to determine that module’s position in the package hierarchy. If the module’s name does not contain any package information (e.g. it is set to \_\_main\_\_) then relative imports are resolved as if the module were a top level module, regardless of where the module is actually located on the file system.
 
 ### PEP328 In English
 
@@ -41,7 +41,7 @@ count = 5
 
 ## Solution
 
-### 1
+### Solution 1
 
 Change the structure of code.
 
@@ -60,7 +60,7 @@ solution1/
     │   ├── demo.py
     │   ├── __init__.py
 ```
-### ２
+### Solution２
 
 change the way of running script:
 run the script as a module by add `-m` option.
